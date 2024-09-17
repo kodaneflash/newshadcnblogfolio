@@ -14,9 +14,9 @@ export type SiteConfig = {
 };
 export const siteConfig: SiteConfig = {
   name: "next-shadcn-sanity-blog",
-  title: " Next Blog Template ✨",
+  title: " enim nulla aliqua duis",
   description:
-    "Introducing a Next.js 14 blogging platform, elegantly designed with ShadcnUI for a seamless and modern user interface, and powered by Sanity.io as its robust headless CMS.",
+    "Deserunt esse qui exedipisicing eu sunt nostrud.",
   url: "",
   ogImage: "/og.jpg",
   links: {
