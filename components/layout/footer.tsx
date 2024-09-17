@@ -118,18 +118,7 @@ export function SiteFooter() {
             Copyright © {new Date().getFullYear()}. All Rights Reserved.
           </div>
 
-          <div className="text-xs">
-            The source code is available on{" "}
-            <a
-              href={siteConfig.links.github}
-              target="_blank"
-              rel="noreferrer"
-              className="font-medium underline underline-offset-4"
-            >
-              GitHub
-            </a>
-            .
-          </div>
+          {/* Removed the GitHub source code mention */}
         </div>
       </div>
     </footer>
