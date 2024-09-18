@@ -14,9 +14,9 @@ export type SiteConfig = {
 };
 export const siteConfig: SiteConfig = {
   name: "next-shadcn-sanity-blog",
-  title: " enim nulla aliqua duis",
+  title: "I'm a solopreneur, builder and founder.",
   description:
-    "Deserunt esse qui exedipisicing eu sunt nostrud.",
+    "I’m a serial entrepreneur, leader, and strategist. I've founded 6 online software companies, with 2 being acquired.",
   url: "",
   ogImage: "/og.jpg",
   links: {
