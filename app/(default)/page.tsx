@@ -9,7 +9,7 @@ const timelineData = [
     title: "2024",
     content: (
       <div>
-        <p>Built and launched Aceternity UI and Aceternity UI Pro from scratch</p>
+        <p>Ba labore sit elit nisi aute nulla sint incididunt laborum aliqua veniam ex.</p>
         {/* Add more content as needed */}
       </div>
     ),
@@ -18,7 +18,7 @@ const timelineData = [
     title: "Early 2023",
     content: (
       <div>
-        <p>I usually run out of copy, but when I see content this big, I try to integrate lorem ipsum.</p>
+        <p>Et et dolor nostrud eiusmod cupidatat id ex tempor quis nostrud.</p>
         {/* Add more content as needed */}
       </div>
     ),
@@ -35,7 +35,7 @@ export default function Home() {
             I'm a solopreneur, builder and founder.
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl text-neutral-500 dark:text-neutral-400 max-w-3xl mx-auto mt-1 sm:mt-4">
-            I'm a serial entrepreneur, leader, and strategist. I've founded 6 online software companies, with 2 being acquired. I have a unique ability to manage multi-disciplinary projects and navigate complex challenges. I share my knowledge and experience on building successful online businesses.
+            I've founded 6 online software companies, with 2 being acquired. I share my knowledge and experience on building successful online businesses.
           </p>
         </div>
       </BackgroundLines>
