@@ -2,6 +2,7 @@ import { BackgroundLines } from "@/components/ui/background-lines";
 import Newsletter from "@/components/ui/newsletter";
 import { Timeline } from "@/components/ui/timeline";
 import { siteConfig } from "@/config/site";
+import { AppleCardsCarousel } from "@/components/ui/apple-cards-carousel";
 
 const timelineData = [
   {
@@ -39,6 +40,7 @@ export default function Home() {
         </div>
       </BackgroundLines>
       <Timeline data={timelineData} />
+      <AppleCardsCarousel />
       <Newsletter />
     </>
   );
