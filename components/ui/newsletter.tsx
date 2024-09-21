@@ -3,7 +3,7 @@ import { Button } from "./moving-border";
 
 export default function Newsletter() {
   return (
-    <section className="py-0 sm:py-2">
+    <section className="py-0 sm:py-2 mt-16 sm:mt-0"> {/* Added top margin for mobile */}
       <div className="max-w-4xl px-1 mx-auto sm:px-2">
         <div className="relative px-2 sm:px-3 py-1 sm:py-3 rounded-2xl overflow-hidden">
           <div className="max-w-2xl mx-auto text-center">
