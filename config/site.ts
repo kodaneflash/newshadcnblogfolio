@@ -15,9 +15,9 @@ export type SiteConfig = {
 
 export const siteConfig: SiteConfig = {
   name: "James Archer | Founder | Solo Entrepreneur",
-  title: "I'm a solopreneur, builder and founder.",
+  title: "James Archer | Solo Entrepreneur | Founder",
   description:
-    "I'm a serial entrepreneur, leader, and strategist. I've founded 6 online software companies, with 2 being acquired.",
+    "I teach solo entrepreneurs how to build and scale successful online businesses.",
   url: "",
   ogImage: "/og.jpg",
   links: {

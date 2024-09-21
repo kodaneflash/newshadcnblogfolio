@@ -8,19 +8,17 @@ import "./globals.css";
 import { SiteFooter } from "@/components/layout/footer";
 import Header from "@/components/layout/header";
 export const metadata: Metadata = {
-  metadataBase: new URL("https://yourdomain.com"), // Change to your project's domain
+  metadataBase: new URL("https://www.jamesarcher.io"),
   title: {
-    default: "James Archer ",
-    template: "%s | Next-Shadcn-Sanity Blog",
+    default: "James Archer",
+    template: "%s | James Archer",
   },
-  description:
-    "A modern blogging platform powered by Next.js 14, ShadcnUI, and Sanity.io.",
+  description: "James Archer | Solo Entrepreneur | Founder",
   openGraph: {
-    title: "Next-Shadcn-Sanity Blog",
-    description:
-      "Explore the future of blogging with our platform powered by Next.js 14, ShadcnUI, and Sanity.io.",
-    url: "https://yourdomain.com", // Change to your project's URL
-    siteName: "Next-Shadcn-Sanity Blog",
+    title: "James Archer | Solo Entrepreneur | Founder",
+    description: "I teach solo entrepreneurs how to build and scale successful online businesses.",
+    url: "https://www.jamesarcher.io",
+    siteName: "James Archer",
     locale: "en_US",
     type: "website",
   },
@@ -36,7 +34,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: "Next-Shadcn-Sanity Blog",
+    title: "James Archer",
     card: "summary_large_image",
   },
   verification: {
