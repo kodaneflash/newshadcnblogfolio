@@ -40,11 +40,14 @@ export default function Home() {
         </div>
       </BackgroundLines>
       
-      <div className="w-full max-w-4xl mx-auto -mt-80 sm:-mt-32 md:-mt-40 relative z-10 px-2 sm:px-4 lg:px-6"> {/* Increased negative margin for mobile */}
+      <div className="w-full max-w-4xl mx-auto -mt-80 sm:-mt-32 md:-mt-40 relative z-10 px-2 sm:px-4 lg:px-6">
         <Newsletter />
       </div>
       
-      <Timeline data={timelineData} />
+      <div className="mt-8 sm:mt-0"> {/* Added margin-top for mobile */}
+        <Timeline data={timelineData} />
+      </div>
+      
       <AppleCardsCarousel />
     </>
   );
