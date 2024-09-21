@@ -374,9 +374,12 @@ export function AppleCardsCarousel() {
 
   return (
     <div className="w-full h-full py-20">
-      <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-center text-neutral-800 dark:text-neutral-200 font-sans mb-10">
+      <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-400 font-sans mb-10">
         My Projects
       </h2>
+      <p className="text-neutral-300 text-sm sm:text-base mb-2 sm:mb-3 text-center max-w-2xl mx-auto">
+      Aliqua eiusmod exercitation id nisi sunt dolor nul.
+      </p>
       <Carousel items={cards} />
     </div>
   );

@@ -38,10 +38,10 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       ref={containerRef}
     >
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10 text-center">
-        <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl mx-auto">
-         Timeline of my journey
+        <h2 className="text-2xl sm:text-3xl mb-1 sm:mb-2 font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-400 max-w-4xl mx-auto">
+          Timeline of my journey
         </h2>
-        <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-2xl mx-auto">
+        <p className="text-neutral-300 text-sm sm:text-base mb-2 sm:mb-3 max-w-2xl mx-auto">
           I&apos;ve pariatur quis ad elit for the past 2 years. Here&apos;s
           a amet aliquip est adipisicing.
         </p>
