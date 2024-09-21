@@ -34,7 +34,7 @@ export default function Home() {
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight max-w-3xl mx-auto bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 pb-2 sm:pb-6">
             {siteConfig.title}
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl text-neutral-500 dark:text-neutral-400 max-w-3xl mx-auto mt-0 sm:mt-1">
+          <p className="text-base sm:text-lg md:text-xl text-neutral-500 dark:text-neutral-400 max-w-3xl mx-auto mt-0 sm:mt-1">
             {siteConfig.description}
           </p>
         </div>
