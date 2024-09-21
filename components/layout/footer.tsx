@@ -63,7 +63,7 @@ export function SiteFooter() {
             <Link href="/">
               <IconBox />
               <div className="mb-4 text-sm">
-                <div className="mt-2 text-xl">{siteConfig.title}</div>
+                <div className="mt-2 text-xl">James Archer</div>
                 <p>📱 {siteConfig.contacts.phone}</p>
                 <p>✉️ {siteConfig.contacts.email}</p>
               </div>
