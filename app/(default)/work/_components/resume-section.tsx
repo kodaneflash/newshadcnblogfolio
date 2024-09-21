@@ -34,7 +34,7 @@ export default function ResumeSection({ resumeData }: ResumeSectionProps) {
         </motion.h1>
         <ul className="space-y-8">
           {resumeData.map((item) => (
-            <li key={item._key} className="relative grbnoup">
+            <li key={item._key} className="relative group">
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0">
                   <Image
