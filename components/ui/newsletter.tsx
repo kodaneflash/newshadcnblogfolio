@@ -15,14 +15,14 @@ export default function Newsletter() {
               <br />
               Join 9,000+ Solopreneurs
             </p>
-            <form className="flex flex-col sm:flex-row items-center justify-center gap-2 w-full max-w-sm mx-auto">
+            <form className="flex items-center justify-center gap-2 w-full max-w-[280px] sm:max-w-sm mx-auto">
               <Input
                 id="email"
-                placeholder="email@example.com"
+                placeholder="email@mail.com"
                 type="email"
-                className="w-full sm:w-auto"
+                className="w-full min-w-0 flex-grow"
               />
-              <Button className="w-full sm:w-auto whitespace-nowrap px-3 py-2 text-sm">Subscribe</Button>
+              <Button className="whitespace-nowrap px-3 py-2 text-sm flex-shrink-0">Subscribe</Button>
             </form>
           </div>
         </div>
