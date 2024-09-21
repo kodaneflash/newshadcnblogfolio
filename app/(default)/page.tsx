@@ -29,7 +29,7 @@ const timelineData = [
 
 export default function Home() {
   return (
-    <>
+    <div className="relative">
       <HeroHighlight>
         <HeroSection
           title={siteConfig.title}
@@ -40,11 +40,11 @@ export default function Home() {
         </div>
       </HeroHighlight>
       
-      <div className="mt-8 sm:mt-0">
+      <div className="relative z-20">
         <Timeline data={timelineData} />
       </div>
       
       <AppleCardsCarousel />
-    </>
+    </div>
   );
 }
