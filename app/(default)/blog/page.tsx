@@ -10,9 +10,9 @@ export default async function Home() {
     <main className="min-h-screen antialiased">
       <HeroSection
         title="Read My Blog"
-        description="Enhance your development skills through insightful articles."
+        description="Est minim eu eiusmod duis pariatur elit dolore mollit eu"
       />
       <PostList allPosts={allPosts} />
-    </main>
+    </main> 
   );
 }

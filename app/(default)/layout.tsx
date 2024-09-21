@@ -10,7 +10,7 @@ import Header from "@/components/layout/header";
 export const metadata: Metadata = {
   metadataBase: new URL("https://yourdomain.com"), // Change to your project's domain
   title: {
-    default: "Next-Shadcn-Sanity Blog",
+    default: "James Archer ",
     template: "%s | Next-Shadcn-Sanity Blog",
   },
   description:
