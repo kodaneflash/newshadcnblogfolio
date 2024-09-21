@@ -24,7 +24,9 @@ export const BackgroundLines = ({
       {/* Radial gradient for the container to give a faded look */}
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       
-      <SVG svgOptions={svgOptions} />
+      <div className="absolute inset-0 flex items-center justify-center -translate-y-16 sm:translate-y-0">
+        <SVG svgOptions={svgOptions} />
+      </div>
       <div className="relative z-20 w-full">
         {children}
       </div>
