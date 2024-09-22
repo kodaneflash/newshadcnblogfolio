@@ -24,7 +24,7 @@ export const siteConfig: SiteConfig = {
     github: "https://github.com/kaganmert/next-shadcn-sanity-blog",
   },
   contacts: {
-    email: "contact@example.com",
+    email: "hello@jamesarcher.io",
     // Removed phone property
   },
 };
