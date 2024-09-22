@@ -5,11 +5,10 @@ export type SiteConfig = {
   url: string;
   ogImage: string;
   links: {
-    github: string;
+    // Removed github property
   };
   contacts: {
     email: string;
-    // Removed phone property
   };
 };
 
@@ -21,10 +20,9 @@ export const siteConfig: SiteConfig = {
   url: "",
   ogImage: "/og.jpg",
   links: {
-    github: "https://github.com/kaganmert/next-shadcn-sanity-blog",
+    // Removed github property
   },
   contacts: {
     email: "hello@jamesarcher.io",
-    // Removed phone property
   },
 };
