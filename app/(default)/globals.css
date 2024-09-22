@@ -81,3 +81,42 @@
       "calt" 1;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.toc {
+  position: sticky;
+  top: 2rem;
+}
+
+.anchor {
+  text-decoration: none;
+  color: inherit;
+}
+
+.anchor:hover::before {
+  content: '#';
+  position: absolute;
+  left: -1em;
+  color: #718096;
+}
+
+@layer base {
+  .toc a {
+    @apply transition-colors duration-200;
+  }
+  .toc a:hover {
+    @apply text-primary;
+  }
+  .prose {
+    @apply max-w-none;
+  }
+}
+
+@media (max-width: 1023px) {
+  .toc {
+    @apply mb-8;
+  }
+}

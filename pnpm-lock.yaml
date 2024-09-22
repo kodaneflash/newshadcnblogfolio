@@ -116,6 +116,9 @@ dependencies:
   sanity:
     specifier: 3.37.2
     version: 3.37.2(@types/node@20.12.7)(@types/react@18.2.75)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.8)
+  slugify:
+    specifier: ^1.6.6
+    version: 1.6.6
   styled-components:
     specifier: 6.1.8
     version: 6.1.8(react-dom@18.2.0)(react@18.2.0)
@@ -7928,6 +7931,11 @@ packages:
       immer: 10.0.4
       is-plain-object: 5.0.0
       tiny-warning: 1.0.3
+    dev: false
+
+  /slugify@1.6.6:
+    resolution: {integrity: sha512-h+z7HKHYXj6wJU+AnS/+IH8Uh9fdcX1Lrhg1/VMdf9PwoBQXFcXiAdsy2tSK0P6gKwJLXp02r90ahUCqHk9rrw==}
+    engines: {node: '>=8.0.0'}
     dev: false
 
   /source-map-js@1.2.0:

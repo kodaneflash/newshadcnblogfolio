@@ -35,6 +35,11 @@ export type Post = {
   body: any;
   headers?: Header[];
   summary: string;
+  headings?: Array<{
+    _type: 'block';
+    style: string;
+    children: Array<{ text: string }>;
+  }>;
 };
 
 export type Category = {
@@ -136,6 +141,7 @@ export async function getLatestPosts(): Promise<Post[]> {
     "mainImage": mainImage.asset->url,
     publishedAt,
     body,
+    "headings": content[style in ["h1", "h2", "h3", "h4", "h5", "h6"]],
     "categories": categories[]->{ title, "slug": slug.current },
     "tags": tags[]->{ title, "color": color.hex },
     "categoryTitle": category->title, 
@@ -161,9 +167,10 @@ export async function getPosts(): Promise<Post[]> {
       "mainImage": mainImage.asset->url,
       publishedAt,
       body,
+      "headings": body[style in ["h1", "h2", "h3", "h4", "h5", "h6"]],
       "categories": categories[]->{ title, "slug": slug.current },
       "tags": tags[]->{ title, "color": color.hex }
-    }`,
+    }`
   );
 }
 export async function getPostsByCategorySlug(
@@ -232,33 +239,15 @@ export async function getPost(slug: string): Promise<Post> {
       publishedAt,
       "categories": categories[]->{ title, "slug": slug.current },
       "tags": tags[]->{ title, "color": color.hex },
-      body
+      body,
+      "headings": body[style in ["h1", "h2", "h3", "h4", "h5", "h6"]]
     }`;
 
     const post: Post = await createClient(clientConfig).fetch(query, { slug });
 
-    const headers: Header[] = [];
-    post.body.forEach((block: Block) => {
-      if (
-        block._type === "block" &&
-        block.style &&
-        block.style.match(/h[1-6]/)
-      ) {
-        block.children.forEach((child: Child) => {
-          if (child._type === "span" && child.text) {
-            headers.push({
-              text: child.text,
-              level: block.style,
-              id: child.text.replaceAll(" ", "-").toLowerCase(),
-            });
-          }
-        });
-      }
-    });
-
-    return { ...post, headers };
+    return post;
   } catch (error) {
-    console.error("Hata:", error);
+    console.error("Error:", error);
     throw error;
   }
 }

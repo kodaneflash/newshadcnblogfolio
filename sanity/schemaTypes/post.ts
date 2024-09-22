@@ -67,6 +67,13 @@ export default defineType({
       title: "Body",
       type: "blockContent",
     }),
+    defineField({
+      name: "headings",
+      title: "Headings",
+      type: "array",
+      of: [{ type: "block" }],
+      readOnly: true,
+    }),
   ],
 
   preview: {
