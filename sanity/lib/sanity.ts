@@ -28,8 +28,9 @@ export type Post = {
   authorBio: string;
   authorPosition: string;
   mainImage: string;
-  category: string[];
-  categorySlug: any;
+  categories: { title: string; slug: string }[];
+  categorySlug: string[];
+  tags: { title: string; color: string }[];
   publishedAt: string;
   body: any;
   headers?: Header[];
@@ -135,7 +136,8 @@ export async function getLatestPosts(): Promise<Post[]> {
     "mainImage": mainImage.asset->url,
     publishedAt,
     body,
-    "tags": blogTags[]->{title, "color": color.hex},
+    "categories": categories[]->{ title, "slug": slug.current },
+    "tags": tags[]->{ title, "color": color.hex },
     "categoryTitle": category->title, 
     "categorySlug": category->slug.current
   }`;
@@ -159,7 +161,8 @@ export async function getPosts(): Promise<Post[]> {
       "mainImage": mainImage.asset->url,
       publishedAt,
       body,
-      "tags": blogTags[]->{title, "color": color.hex} 
+      "categories": categories[]->{ title, "slug": slug.current },
+      "tags": tags[]->{ title, "color": color.hex }
     }`,
   );
 }
@@ -181,13 +184,14 @@ export async function getPostsByCategorySlug(
         "mainImage": mainImage.asset->url,
         publishedAt,
         body,
-        "tags": blogTags[]->{title, "color": color.hex} 
+        "categories": categories[]->{ title, "slug": slug.current },
+        "tags": tags[]->{ title, "color": color.hex }
       }`;
 
       const posts: Post[] = await createClient(clientConfig).fetch(query);
       return posts;
     } else {
-      const query = groq`*[_type == "post" && category->slug.current == $categorySlug] | order(_createdAt desc) {
+      const query = groq`*[_type == "post" && $categorySlug in categories[]->slug.current] | order(_createdAt desc) {
         _id,
         _createdAt,
         title,
@@ -198,7 +202,8 @@ export async function getPostsByCategorySlug(
         "mainImage": mainImage.asset->url,
         publishedAt,
         body,
-        "tags": blogTags[]->{title, "color": color.hex} 
+        "categories": categories[]->{ title, "slug": slug.current },
+        "tags": tags[]->{ title, "color": color.hex }
       }`;
 
       const posts: Post[] = await createClient(clientConfig).fetch(query, {
@@ -207,7 +212,7 @@ export async function getPostsByCategorySlug(
       return posts;
     }
   } catch (error) {
-    console.error("Hata:", error);
+    console.error("Error:", error);
     throw error;
   }
 }
@@ -225,10 +230,9 @@ export async function getPost(slug: string): Promise<Post> {
       "authorPosition": author->position,
       "mainImage": mainImage.asset->url,
       publishedAt,
-      "category": category->title,
-      "categorySlug": category->slug.current,
-      body,
-      "tags": blogTags[]->{title, "color": color.hex} 
+      "categories": categories[]->{ title, "slug": slug.current },
+      "tags": tags[]->{ title, "color": color.hex },
+      body
     }`;
 
     const post: Post = await createClient(clientConfig).fetch(query, { slug });
@@ -263,7 +267,7 @@ export async function getPostsByCategoryName(
   categoryName: string,
 ): Promise<Post[]> {
   try {
-    const query = groq`*[_type == "post" && category.title == $categoryName] | order(_createdAt desc) {
+    const query = groq`*[_type == "post" && $categoryName in categories[]->title] | order(_createdAt desc) {
       _id,
       _createdAt,
       title,
@@ -274,7 +278,8 @@ export async function getPostsByCategoryName(
       "mainImage": mainImage.asset->url,
       publishedAt,
       body,
-      "tags": blogTags[]->{title, "color": color.hex} 
+      "categories": categories[]->{ title, "slug": slug.current },
+      "tags": tags[]->{ title, "color": color.hex }
     }`;
 
     const posts: Post[] = await createClient(clientConfig).fetch(query, {

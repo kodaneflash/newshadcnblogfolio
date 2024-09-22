@@ -27,20 +27,21 @@ const ImageComponent: React.FC<ImageComponentProps> = ({ value }) => {
   }
 
   return (
-    <figure className="mt-4 mb-4">
-      <Image
-        className="w-full rounded"
-        src={imageUrl}
-        width={680}
-        height={382}
-        alt={alt || ""}
-        style={{
-          width: "50%",
-          height: "50%",
-        }}
-      />
+    <figure className="my-8">
+      <div className="overflow-hidden rounded-lg shadow-lg">
+        <Image
+          className="w-full transition-transform duration-300 ease-in-out hover:scale-105"
+          src={imageUrl}
+          width={680}
+          height={382}
+          alt={alt || ""}
+          layout="responsive"
+        />
+      </div>
       {alt && (
-        <figcaption className="mt-3 text-sm text-gray-500">{alt}</figcaption>
+        <figcaption className="mt-3 text-sm text-center text-gray-500 italic">
+          {alt}
+        </figcaption>
       )}
     </figure>
   );

@@ -15,18 +15,31 @@ async function PostDetail({ postSlug }: any) {
 
   return (
     <article className="container mx-auto px-4 py-8 sm:py-12 lg:py-16">
-      <div className="mx-auto max-w-3xl">
-        <div className="mb-8">
+      <div className="mx-auto max-w-3xl lg:max-w-4xl">
+        <div className="mb-12">
           <Link
             href="/blog"
             className={cn(
               buttonVariants({ variant: "ghost" }),
-              "mt-8 inline-flex",
+              "mb-8 inline-flex"  
             )}
           >
             &larr; See all posts
           </Link>
-          <h1 className="text-4xl font-bold leading-tight sm:text-5xl">
+          
+          {post.mainImage && (
+            <div className="mb-8">  
+              <Image
+                src={post.mainImage}
+                alt={post.title}
+                width={1200}
+                height={675}
+                className="rounded-lg object-cover w-full"
+              />
+            </div>
+          )}
+          
+          <h1 className="text-4xl font-bold leading-tight sm:text-5xl mb-8">  
             {post.title}
           </h1>
 

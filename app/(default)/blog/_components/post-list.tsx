@@ -8,9 +8,8 @@ export const PostList = ({ allPosts }: { allPosts: Post[] }) => {
   return (
     <BentoGrid className="max-w-4xl mx-auto mb-10 md:mb-26">
       {allPosts.map((post: Post, i) => (
-        <Link href={`/blog/post/${post.slug}`}>
+        <Link href={`/blog/post/${post.slug}`} key={post._id}>
           <BentoGridItem
-            key={post._id}
             title={post.title}
             description={post.summary}
             header={<PostImage mainImage={post.mainImage} />}
@@ -20,6 +19,8 @@ export const PostList = ({ allPosts }: { allPosts: Post[] }) => {
                 author={post.author}
                 authorImg={post.authorImg}
                 publishedAt={post.publishedAt}
+                categories={post.categories}
+                tags={post.tags}
               />
             }
           />
