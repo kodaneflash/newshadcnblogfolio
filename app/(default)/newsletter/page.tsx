@@ -9,6 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'The Solopreneur Blueprint - Your Saturday issue to find online business ideas, launch fast, and get profitable.',
     description: 'Subscribe to the Solopreneur Blueprint newsletter to find online business ideas, launch fast, and get profitable. Join 9,000+ Solopreneurs.',
+    siteName: 'James Archer',
+    url: 'https://jamesarcher.io/newsletter',
     images: [
       {
         url: 'https://res.cloudinary.com/imaginify/image/upload/v1726990640/newsletterog_txzcm6.png',
