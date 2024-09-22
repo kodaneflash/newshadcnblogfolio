@@ -20,6 +20,12 @@ export const metadata: Metadata = {
       },
     ],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'The Solopreneur Blueprint - Your Saturday issue to find online business ideas, launch fast, and get profitable.',
+    description: 'Subscribe to the Solopreneur Blueprint newsletter to find online business ideas, launch fast, and get profitable. Join 9,000+ Solopreneurs.',
+    images: ['https://res.cloudinary.com/imaginify/image/upload/v1726990640/newsletterog_txzcm6.png'],
+  },
 }
 
 export default function NewsletterPage() {

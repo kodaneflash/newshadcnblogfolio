@@ -12,14 +12,22 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'James Archer | Solo Entrepreneur | Founder',
     description: 'Discover strategies and insights for building successful online businesses as a solo entrepreneur.',
+    url: 'https://jamesarcher.io',
+    siteName: 'James Archer',
     images: [
       {
-        url: 'https://res.cloudinary.com/imaginify/image/upload/v1726992034/homepageog_nxavfe.png', // Replace with actual image URL
+        url: 'https://res.cloudinary.com/imaginify/image/upload/v1726992034/homepageog_nxavfe.png',
         width: 1200,
         height: 630,
         alt: 'James Archer - Solo Entrepreneur & Founder',
       },
     ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'James Archer | Solo Entrepreneur | Founder',
+    description: 'Learn how to build and scale successful online businesses as a solo entrepreneur.',
+    images: ['https://res.cloudinary.com/imaginify/image/upload/v1726992034/homepageog_nxavfe.png'],
   },
 }
 

@@ -19,6 +19,12 @@ export const metadata: Metadata = {
       },
     ],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Solopreneur MBA - The complete blueprint for building profitable one-person online businesses.',
+    description: 'The complete blueprint for building profitable one-person online businesses to learn how to become a efficient solo entrepreneur to build, launch and scale fast and effectively.',
+    images: ['https://res.cloudinary.com/imaginify/image/upload/v1726990640/solopreneur-mba-og_abcdef.png'],
+  },
 }
 
 export default function SolopreneurMBA() {
