@@ -1,9 +1,27 @@
+import type { Metadata } from 'next'
 import Newsletter from "@/components/ui/newsletter";
 import { Timeline } from "@/components/ui/timeline";
 import { siteConfig } from "@/config/site";
 import { AppleCardsCarousel } from "@/components/ui/apple-cards-carousel";
 import HeroSection from "@/components/hero-section";
 import { HeroHighlight } from "@/components/ui/hero-highlight";
+
+export const metadata: Metadata = {
+  title: 'James Archer | Solo Entrepreneur | Founder',
+  description: 'Learn how to build and scale successful online businesses as a solo entrepreneur.',
+  openGraph: {
+    title: 'James Archer | Solo Entrepreneur | Founder',
+    description: 'Discover strategies and insights for building successful online businesses as a solo entrepreneur.',
+    images: [
+      {
+        url: 'https://res.cloudinary.com/imaginify/image/upload/v1726992034/homepageog_nxavfe.png', // Replace with actual image URL
+        width: 1200,
+        height: 630,
+        alt: 'James Archer - Solo Entrepreneur & Founder',
+      },
+    ],
+  },
+}
 
 const timelineData = [
   {

@@ -10,14 +10,14 @@ import Header from "@/components/layout/header";
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.jamesarcher.io"),
   title: {
-    default: "James Archer",
-    template: "%s | James Archer",
+    default: "James Archer | Solo Entrepreneur | Founder",
+    template: "%s | James Archer | Solo Entrepreneur | Founder",
   },
-  description: "James Archer | Solo Entrepreneur | Founder",
+  description: "I teach solo entrepreneurs how to build and scale successful online businesses.",
   openGraph: {
     title: "James Archer | Solo Entrepreneur | Founder",
     description: "I teach solo entrepreneurs how to build and scale successful online businesses.",
-    url: "https://www.jamesarcher.io",
+    url: "https://jamesarcher.io",
     siteName: "James Archer",
     locale: "en_US",
     type: "website",

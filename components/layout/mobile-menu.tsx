@@ -9,6 +9,8 @@ import ModeToggleMobile from "../ui/mode-toggle-mobile";
 const mobileNavLinks = [
   { label: "Work", href: "/work" },
   { label: "Blog", href: "/blog" },
+  { label: "Newsletter", href: "/newsletter" },
+  { label: "Solopreneur MBA", href: "/solopreneur-mba" },
 ];
 
 const MobileMenu = () => {

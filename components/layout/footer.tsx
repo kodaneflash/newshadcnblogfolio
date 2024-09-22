@@ -14,6 +14,7 @@ const footerGroups = [
     links: [
       { label: "Work", href: "/work" },
       { label: "About", href: "/about" },
+      { label: "Newsletter", href: "/newsletter" }, // Added this line
     ],
   },
   {
@@ -22,11 +23,11 @@ const footerGroups = [
   },
   {
     label: "Contact",
-    links: [{ label: "GitHub", href: "https://github.com/kaganmert" }],
+    links: [{ label: "Email", href: "mailto:hello@jamesarcher.io" }],
   },
   {
-    label: "Other",
-    links: [{ label: "GitHub", href: "https://github.com/kaganmert" }],
+    label: "Courses",
+    links: [{ label: "Solopreneur MBA", href: "/solopreneur-mba" }],
   },
 ];
 
