@@ -10,7 +10,7 @@ const mobileNavLinks = [
   { label: "Work", href: "/work" },
   { label: "About", href: "/about" }, // Added this line
   { label: "Blog", href: "/blog" },
-  { label: "Newsletter", href: "/newsletter" },
+  { label: "Solopreneur MBA", href: "/solopreneur-mba" },
 ];
 
 const MobileMenu = () => {
