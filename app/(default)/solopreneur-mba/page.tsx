@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     url: 'https://jamesarcher.io/solopreneur-mba',
     images: [
       {
-        url: 'https://res.cloudinary.com/imaginify/image/upload/v1726990640/solopreneur-mba-og_abcdef.png', // Replace with actual image URL
+        url: 'https://res.cloudinary.com/imaginify/image/upload/v1726993397/solombaog_yktzdu.png', // Replace with actual image URL
         width: 1200,
         height: 630,
         alt: 'Solopreneur MBA Course',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Solopreneur MBA - The complete blueprint for building profitable one-person online businesses.',
     description: 'The complete blueprint for building profitable one-person online businesses to learn how to become a efficient solo entrepreneur to build, launch and scale fast and effectively.',
-    images: ['https://res.cloudinary.com/imaginify/image/upload/v1726990640/solopreneur-mba-og_abcdef.png'],
+    images: ['https://res.cloudinary.com/imaginify/image/upload/v1726993397/solombaog_yktzdu.png'],
   },
 }
 
