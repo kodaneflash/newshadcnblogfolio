@@ -21,6 +21,14 @@ export const metadata: Metadata = {
     siteName: "James Archer",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "https://res.cloudinary.com/imaginify/image/upload/v1726992034/homepageog_nxavfe.png", // Add a default OG image
+        width: 1200,
+        height: 630,
+        alt: "James Archer - Solo Entrepreneur & Founder",
+      },
+    ],
   },
   robots: {
     index: true,
@@ -36,6 +44,7 @@ export const metadata: Metadata = {
   twitter: {
     title: "James Archer",
     card: "summary_large_image",
+    images: ["https://res.cloudinary.com/imaginify/image/upload/v1726992034/homepageog_nxavfe.png"], // Add a default Twitter image
   },
   verification: {
     google: "YourGoogleVerificationToken", // Update with your new Google verification token
