@@ -9,7 +9,7 @@ export type SiteConfig = {
   };
   contacts: {
     email: string;
-    phone: string;
+    // Removed phone property
   };
 };
 
@@ -25,6 +25,6 @@ export const siteConfig: SiteConfig = {
   },
   contacts: {
     email: "contact@example.com",
-    phone: "08000 000 000",
+    // Removed phone property
   },
 };

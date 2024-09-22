@@ -65,7 +65,7 @@ export function SiteFooter() {
               <IconBox />
               <div className="mb-4 text-sm">
                 <div className="mt-2 text-xl">James Archer</div>
-                <p>📱 {siteConfig.contacts.phone}</p>
+                {/* Removed phone line */}
                 <p>✉️ {siteConfig.contacts.email}</p>
               </div>
             </Link>
