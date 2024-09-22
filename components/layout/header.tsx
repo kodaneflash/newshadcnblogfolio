@@ -5,6 +5,7 @@ import { ModeToggle } from "../ui/mode-toggle";
 
 const navLinks = [
   { label: "Work", href: "/work" },
+  { label: "About", href: "/about" }, // Added this line
   { label: "Blog", href: "/blog" },
   { label: "Solopreneur MBA", href: "/solopreneur-mba" },
 ];

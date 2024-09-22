@@ -116,7 +116,7 @@ export function SiteFooter() {
 
         <div className="pb-4 md:pb-8">
           <div className="text-xs">
-            Copyright © James {new Date().getFullYear()}. All Rights Reserved.
+            Copyright © James Archer {new Date().getFullYear()}. All Rights Reserved.
           </div>
 
           {/* Removed the GitHub source code mention */}
